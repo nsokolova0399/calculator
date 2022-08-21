@@ -1,0 +1,238 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    html{
+        font-size: 6px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    html{
+        font-size: 7px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    html{
+        font-size: 8px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    html{
+        font-size: 9px;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    html{
+        font-size: 10px;
+    }
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    box-shadow: 0.0rem 0.0rem 1.6rem rgba(38, 38, 38, 0.16);
+    height: 7.2rem;
+}
+.navbar-brand {
+    font-family: 'Roboto';
+    font-size: 3rem;
+    color: #000000;
+    text-shadow: 0.0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.navbar-fixed-bottom{
+    bottom: 0.0rem;
+    background-color: #262626;
+}
+
+.navbar-brand-footer-1{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    text-shadow: 0.0rem 0.4rem 0.4rem rgba(252, 248, 255, 0.74);
+}
+.navbar-brand-footer-2{
+    margin-top: -5px;
+    font-size: 2rem;
+    color: #696969;
+    text-shadow: 0.0rem 0.1rem 0.1rem rgba(252, 248, 255, 0.74);
+    white-space: nowrap;
+}
+.navbar-brand-footer-1:hover,.navbar-brand-footer-2:hover, .navbar-brand:hover{
+    color: #CB5FFE;
+    text-decoration: none;
+}
+
+/*Калькулятор*/
+.containerPattern{
+    box-sizing: border-box;
+    width: 44.2rem;
+    height: 46.0rem;
+    margin-top: 7.0rem;
+    margin-bottom: 7.6rem;
+    background: #47DEFF;
+    border-radius: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerInputOutput{
+    box-sizing: border-box;
+    width: 39.173rem;
+    height: 5.63rem;
+    background: #FFFFFF;
+    border-radius: 6rem;
+    margin-left: 2.5rem;
+    margin-top: 2.8rem;
+
+}
+.containerNumber7,.containerNumber8,.containerNumber9,.containerNumberMult,.containerNumberDel,
+.containerNumber4,.containerNumber5,.containerNumber6,.containerNumberDiv,
+.containerNumber1,.containerNumber2,.containerNumber3,.containerNumberMin,
+.containerNumber0,.containerNumberPoint,.containerNumberEqual,.containerNumberPlus
+{
+    background: #CB5FFE;
+    box-shadow: 0.0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 6rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    color: #FFFFFF;
+    font-family: 'Rubik Moonrocks';
+    font-style: normal;
+    font-size: 3.5rem;
+    padding-top: 0.75rem;
+    margin-top: 1.2rem;
+    text-align: center;
+}
+.containerNumber7,.containerNumber8,.containerNumber9,.containerNumberMult,.containerNumberDel{
+    margin-top: 3.2rem;
+}
+.containerNumber7,.containerNumber4, .containerNumber1,.containerNumber0{
+    margin-left: 2.5rem;
+    margin-right: 1.3rem;
+}
+.containerNumber8,.containerNumber9,.containerNumberMult,
+.containerNumber5,.containerNumber6,.containerNumberDiv,
+.containerNumber2,.containerNumber3,.containerNumberMin,
+.containerNumberPoint,.containerNumberEqual,.containerNumberPlus
+{
+    margin-left: 0.0rem;
+    margin-right: 1.3rem;
+}
+.containerNumberDel{
+    margin-left: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.containerNumber7:hover,.containerNumber8:hover,.containerNumber9:hover,.containerNumberMult:hover,.containerNumberDel:hover,
+.containerNumber4:hover,.containerNumber5:hover,.containerNumber6:hover,.containerNumberDiv:hover,
+.containerNumber1:hover,.containerNumber2:hover,.containerNumber3:hover,.containerNumberMin:hover,
+.containerNumber0:hover,.containerNumberPoint:hover,.containerNumberEqual:hover,.containerNumberPlus:hover
+
+{
+    background: #8328af;
+}
+/*Кнопка редактирования*/
+.containerEdit{
+    padding-top: 2.1rem;
+}
+.pulseButtonEdit{
+    background-color: #CB5FFE;
+    width: 6.5rem;
+    height: 6.5rem;
+    box-shadow: 0.0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 6rem;
+}
+.pulseButtonEditImg{
+    padding: 3rem 3rem 3rem 3rem;
+    width: 3rem;
+    height: 3rem;
+    background: url('../img/editor.png') center center no-repeat;
+    transition: .3s;
+}
+
+.pulse-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 6rem;
+    border: none;
+    background: #CB5FFE;
+    box-shadow: 0 0.5rem 3.5rem rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 9.5rem;
+    right: 2.2rem;
+    cursor: pointer;
+    outline: none;
+    z-index: 1000;
+}
+.pulse-button:hover
+{
+    background: #8328af;
+}
+.pulse-button__icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: url("../img/editor.png") center center/cover no-repeat;
+    transition: .3s;
+}
+
+.pulse-button__rings {
+    border: 0.1rem solid #CB5FFE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    border-radius: 5rem;
+    animation-duration: 2.0s;
+    animation-name: pulse_1;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.pulse-button__rings:nth-child(2) {
+    animation-name: pulse_2;
+}
+
+.pulse-button__rings:nth-child(3) {
+    animation-name: pulse_3;
+}
+
+@keyframes pulse_1 {
+    from {
+        opacity: 1;
+        transform: scale(0.9, 0.9);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.3, 1.3);
+    }
+}
+@keyframes pulse_2 {
+    from {
+        opacity: 1;
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.5, 1.5);
+    }
+}
+@keyframes pulse_3 {
+    from {
+        opacity: 1;
+        transform: scale(0.8, 0.8);
+    }
+    to {
+        opacity: 0;
+        transform: scale(1.7, 1.7);
+    }
+}
