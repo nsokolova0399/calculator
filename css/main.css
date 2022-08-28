@@ -1,7 +1,7 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
     html{
-        font-size: 6px;
+        font-size: 6.5px;
     }
 }
 /* Extra Small Devices, Phones */
@@ -28,9 +28,10 @@
         font-size: 10px;
     }
 }
-
-.navbar-default {
+body,.navbar-default {
     background-color: #ffffff;
+}
+.navbar-default {
     box-shadow: 0.0rem 0.0rem 1.6rem rgba(38, 38, 38, 0.16);
     height: 7.2rem;
 }
@@ -75,24 +76,31 @@
     border-radius: 6rem;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0.0rem 0.4rem 2rem rgba(0, 0, 0, 0.25);
 }
 
 .containerInputOutput{
     box-sizing: border-box;
-    width: 39.173rem;
-    height: 5.63rem;
+    width: 39.2rem;
+    height: 7rem;
     background: #FFFFFF;
     border-radius: 6rem;
     margin-left: 2.5rem;
     margin-top: 2.8rem;
-
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 5rem;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    padding-right: 1.5rem;
 }
+
 .containerNumber7,.containerNumber8,.containerNumber9,.containerNumberMult,.containerNumberDel,
 .containerNumber4,.containerNumber5,.containerNumber6,.containerNumberDiv,
 .containerNumber1,.containerNumber2,.containerNumber3,.containerNumberMin,
 .containerNumber0,.containerNumberPoint,.containerNumberEqual,.containerNumberPlus
 {
-    background: #CB5FFE;
     box-shadow: 0.0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
     border-radius: 6rem;
     width: 6.5rem;
@@ -129,7 +137,6 @@
 .containerNumber4:hover,.containerNumber5:hover,.containerNumber6:hover,.containerNumberDiv:hover,
 .containerNumber1:hover,.containerNumber2:hover,.containerNumber3:hover,.containerNumberMin:hover,
 .containerNumber0:hover,.containerNumberPoint:hover,.containerNumberEqual:hover,.containerNumberPlus:hover
-
 {
     background: #8328af;
 }
@@ -168,7 +175,6 @@
     right: 2.2rem;
     cursor: pointer;
     outline: none;
-    z-index: 1000;
 }
 .pulse-button:hover
 {
@@ -195,7 +201,7 @@
     animation-duration: 2.0s;
     animation-name: pulse_1;
     animation-iteration-count: infinite;
-    z-index: -1;
+
 }
 
 .pulse-button__rings:nth-child(2) {
@@ -235,4 +241,170 @@
         opacity: 0;
         transform: scale(1.7, 1.7);
     }
+}
+
+
+/*меню*/
+.menuPopup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top:0;
+    left:0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.menuPopup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.menuPopuparea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+}
+.menuPopupbody{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45rem;
+    height: 49.3rem;
+    background: #8600C5;
+    box-shadow: 2px 2px 200px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    margin-top: 12.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.menuPopupbodyTitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 2.6rem;
+    line-height: 2.4rem;
+    padding-left: 4rem;
+    font-weight: 500;
+
+}
+.menuPopupbodyTitleTheme-1{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding-left: 3rem;
+}
+.menuPopupbodyColor-1{
+    padding-top: 10rem;
+    padding-left: 25rem;
+    min-height: 6.1rem;
+    background: url('../img/Group 6.png') center center no-repeat;
+}
+.menuPopupbodyTitleTheme-2{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    color: #011685;
+    padding-left: 3rem;
+}
+.menuPopupbodyColor-2{
+    padding-top: 10rem;
+    padding-left: 25rem;
+    height: 6.1rem;
+    background: url('../img/Group 7.png') center center no-repeat;
+}
+
+.menuPopupbodyTitleTheme-3{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    color: #47DEFF;
+    padding-left: 3rem;
+}
+.menuPopupbodyColor-3{
+    padding-top: 10rem;
+    padding-left: 25rem;
+    height: 6.1rem;
+    background: url('../img/Group 8.png') center center no-repeat;
+}
+.menuPopupbodyTitleTheme-4{
+    padding-top: 4rem;
+    font-size: 2.5rem;
+    color: #262626;
+    padding-left: 3rem;
+}
+.menuPopupbodyColor-4{
+    padding-top: 10rem;
+    padding-left: 20rem;
+    height: 6.1rem;
+    background: url('../img/Ellipse 5.png') center center no-repeat;
+}
+.menuPopupbodyColor-5{
+    padding-top: 10rem;
+    padding-left: 9rem;
+    height: 6.1rem;
+    background: url('../img/Ellipse 6.png') center center no-repeat;
+}
+
+.menuPopupSave{
+    background-color: #47DEFF;
+    width: 50rem;
+    height: 4rem;
+    padding-left: 1.4rem;
+    padding-top: 0.5rem;
+    color: black;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 200px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+}
+.menuPopup a{
+    text-decoration: none;
+}
+.menuPopup a:hover{
+    color:black;
+}
+/*цвета темы сайта*/
+.dark{
+    background-color: #525252;
+}
+.dark-1{
+    background-color: #262626;
+}
+.light{
+    background-color: #ffffff;
+}
+
+/*цвета темы калькулятора*/
+.containerPattern{
+    background: #47DEFF;
+}
+
+.btn{
+    background-color: #CB5FFE;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.yellow{
+    background: #FDFFA3;
+}
+.blue-1{
+    background-color: #47DEFF;
+}
+.blue-2{
+    background-color: #011685;
+}
+.lilac{
+    background-color: #62004C;
+}
+.purple{
+    background-color: #CB5FFE;
 }

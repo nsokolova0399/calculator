@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="./css/main.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Rubik Moonrocks' rel='stylesheet'>
-    <script src="./js/main.js"></script>
+    <script src="./js/popup.js" defer></script>
+    <script src="./js/main.js" defer></script>
     <title>CALCULATION</title>
 </head>
 <body>
@@ -28,42 +29,46 @@
         <div class="containerPattern">
             <div class="container">
                 <div class="row">
-                    <div class="containerInputOutput"></div>
-                    <div class="containerNumber7">7</div>
-                    <div class="containerNumber8">8</div>
-                    <div class="containerNumber9">9</div>
-                    <div class="containerNumberMult">×</div>
-                    <div class="containerNumberDel">C</div>
+                    <div class="containerInputOutput"><p>0</p></div>
+                </div>
+                <div class="buttons">
+                <div class="row">
+                    <div class="btn containerNumber7">7</div>
+                    <div class="btn containerNumber8">8</div>
+                    <div class="btn containerNumber9">9</div>
+                    <div class="btn containerNumberMult">×</div>
+                    <div class="btn containerNumberDel">AC</div>
                 </div>
                 <div class="row">
-                    <div class="containerNumber4">4</div>
-                    <div class="containerNumber5">5</div>
-                    <div class="containerNumber6">6</div>
-                    <div class="containerNumberDiv">÷</div>
+                    <div class="btn containerNumber4">4</div>
+                    <div class="btn containerNumber5">5</div>
+                    <div class="btn containerNumber6">6</div>
+                    <div class="btn containerNumberDiv">÷</div>
                 </div>
                 <div class="row">
-                    <div class="containerNumber1">1</div>
-                    <div class="containerNumber2">2</div>
-                    <div class="containerNumber3">3</div>
-                    <div class="containerNumberMin">-</div>
+                    <div class="btn containerNumber1">1</div>
+                    <div class="btn containerNumber2">2</div>
+                    <div class="btn containerNumber3">3</div>
+                    <div class="btn containerNumberMin">-</div>
                 </div>
                 <div class="row">
-                    <div class="containerNumber0">0</div>
-                    <div class="containerNumberPoint">.</div>
-                    <div class="containerNumberEqual">=</div>
-                    <div class="containerNumberPlus">+</div>
+                    <div class="btn containerNumber0">0</div>
+                    <div class="btn containerNumberPoint">.</div>
+                    <div class="btn containerNumberEqual">=</div>
+                    <div class="btn containerNumberPlus">+</div>
                 </div>
+            </div>
             </div>
         </div>
 
     </div>
     <div class="containerEdit col-lg-3 col-md-2 col-xs-1">
-        <button class="pulse-button">
-            <span class="pulse-button__icon"></span>
+        <a href="#menuPopup" class="pulse-button  menuPopup-link" >
+            <span  class="pulse-button__icon"></span>
             <span class="pulse-button__rings"></span>
             <span class="pulse-button__rings"></span>
             <span class="pulse-button__rings"></span>
-        </button>
+        </a>
     </div>
     </div>
 </div>
@@ -76,6 +81,41 @@
     </div>
     </nav>
 </footer>
+<div id="menuPopup" class="menuPopup">
+    <a href="##" class="menuPopuparea"></a>
+    <div class="menuPopupbody">
+        <div class="container">
+            <div class="row">
+                <a class="menuPopupbodyTitle col-lg-12 col-md-12 col-xs-12">Изменить тему калькулятора</a>
+            </div>
+            <div class="row">
+                <a class="menuPopupbodyTitleTheme-1">Светлая тема</a>
+                <a href="#menuPopup" class="themeWhiteYellow menuPopupbodyColor-1"></a>
+            </div>
+            <div class="row">
+                <a class="menuPopupbodyTitleTheme-2">Темная тема</a>
+                <a href="#menuPopup" class="themeBlueLilac menuPopupbodyColor-2"></a>
+            </div>
+            <div class="row">
+                <a class="menuPopupbodyTitleTheme-3">Цветная тема</a>
+                <a href="#menuPopup" class="themeBluePurple menuPopupbodyColor-3"></a>
+            </div>
+            <div class="row">
+                <a class="menuPopupbodyTitleTheme-4">Тема сайта</a>
+                <a href="#menuPopup" class="themeDark menuPopupbodyColor-4"></a>
+                <a href="#menuPopup" class="themeLight menuPopupbodyColor-5"></a>
+            </div>
+            <div class="row">
+                <a class="col-lg-3 col-md-3 col-xs-3"></a>
+                <a href="" onclick="dummy(0);return false;" class="menuPopupSave col-lg-6 col-md-6 col-xs-6">
+                    Сохранить изменения
+                </a>
+                <a class="col-lg-3 col-md-3 col-xs-3"></a>
+            </div>
+    </div>
+    </div>
+
+</div>
 </body>
 </html>
 
